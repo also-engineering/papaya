@@ -1,0 +1,16 @@
+button.RadioButtonView-selector {
+  color: black;
+  background: none;
+  border: 1px solid white;
+  margin: 0 -1px;
+}
+
+button.RadioButtonView-selected {
+  background: white;
+  border: 1px solid white;
+}
+
+button.RadioButtonView-selected:active {
+  background: white;
+  border: 1px solid white;
+}

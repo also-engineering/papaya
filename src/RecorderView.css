@@ -1,0 +1,24 @@
+
+button.RecorderView-play,
+button.RecorderView-stop-play,
+button.RecorderView-record,
+button.RecorderView-stop-record {
+    color: white;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+    margin: 0;
+    flex: 1;
+    min-width: 25%;
+    height: 10vmax;
+    font-size: 1.5em;
+}
+
+button.RecorderView-play,
+button.RecorderView-stop-play {
+    background: #2ECC40; /* green */
+}
+
+button.RecorderView-record,
+button.RecorderView-stop-record {
+    background: #FF4136; /* red */
+}

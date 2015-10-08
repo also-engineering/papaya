@@ -1,0 +1,23 @@
+div.pure-menu-horizontal {
+  font-size: 2em;
+  position: fixed;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+  background: white;
+}
+
+.pure-menu-has-children > .pure-menu-link:after {
+  sfont-size: inherit !important;
+}
+
+.pure-menu-link, .pure-menu-disabled, .pure-menu-heading {
+  padding: .5em .4em !important;
+}
+
+li#logo img {
+  height: 2em;
+  width: 2em;
+  right: 0;
+  top: 0;
+  position:fixed;
+}
+

@@ -1,0 +1,59 @@
+{
+  "name": "papaya-ethiopia",
+  "version": "1.0.0",
+  "description": "A soundboard and recording app for phonemes in different languages.",
+  "main": "www/js/app.js",
+  "scripts": {
+    "test": "browserify -d tests/index.js > tests/bundle.js && mocha tests/bundle.js",
+    "gulp": "gulp",
+    "postinstall": "./postinstall.sh",
+    "debug": "./debug.sh",
+    "makeconfig": "./makeconfig.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ICTatRTI/papaya.git"
+  },
+  "keywords": [
+    "sound",
+    "education",
+    "recording",
+    "phoneme",
+    "language"
+  ],
+  "author": "ictadmin@rti.org",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ICTatRTI/papaya/issues"
+  },
+  "homepage": "https://github.com/ICTatRTI/papaya#readme",
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "cordova": "^5.2.0",
+    "del": "^2.0.2",
+    "esformatter": "^0.7.3",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^2.2.0",
+    "gulp-file-insert": "^1.0.2",
+    "gulp-notify": "^2.2.0",
+    "gulp-param": "^0.6.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.2.0",
+    "gulp-util": "^3.0.6",
+    "http-server": "^0.8.4",
+    "mocha": "^2.3.2",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "yargs": "^3.26.0"
+  },
+  "dependencies": {
+    "backbone": "^1.2.2",
+    "browserify": "^11.0.1",
+    "handlebars": "^4.0.3",
+    "jquery": "^2.1.4",
+    "jsesc": "^0.5.0",
+    "lodash": "^3.10.1"
+  }
+}

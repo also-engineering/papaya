@@ -1,0 +1,18 @@
+# Files listed here are not source controled.
+# They should include built or compiled files.
+# They should also include files that are heavily
+# reliant on configuration.
+
+# OSX
+.DS_Store
+
+# Cordova
+platforms
+plugins
+
+# node
+node_modules
+
+# app builds
+www/*
+!www/assets

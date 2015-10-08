@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="org.rti.papaya" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Papaya</name>
+    <description>
+        A simple app that plays sounds and lets you compare your own recorded sounds.
+    </description>
+    <author email="ict-admin@rti.org" href="http://github.com/ICTatRTI">
+        RTI International
+    </author>
+    <content src="index.html" />
+    <icon src="res/icon.png" />
+    <access origin="*" />
+</widget>

@@ -1,0 +1,20 @@
+
+<template id="SoundboardView-button">
+    <button class='pure-button SoundboardView-phoneme' data-key='{{key}}'>{{label}}</button>
+</template>
+
+<script id="SoundboardView-table" type="text/x-handlebars-template">
+  <table class='SoundboardView-table'>
+    {{#rows}}
+      <tr>
+        {{#each cells}}
+          {{#if key}}
+            <td>
+              <button class='pure-button SoundboardView-phoneme' data-id='{{id}}' data-key='{{key}}'>{{label}}</button>
+            </td>
+          {{/if}}
+        {{/each}}
+      </tr>
+    {{/rows}}
+  </table>
+</script>

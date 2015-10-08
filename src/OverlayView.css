@@ -1,0 +1,8 @@
+.OverlayView-overlay {
+  position: fixed;
+  top: 0;
+  padding: 2em;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 99999;
+  font-size: 1.5em;
+}

@@ -1,0 +1,18 @@
+
+<template id='SelectorView-layout'>
+
+  <div class="pure-menu pure-menu-horizontal">
+    <ul class="pure-menu-list">
+      <li class="pure-menu-item pure-menu-has-children">
+        <span class="pure-menu-link indicator">{{title}}</span>
+        <ul class="pure-menu-children"></ul>
+      </li>
+      <li class="pure-menu-item" id="logo"><img src="assets/logo.png"></li>
+    </ul>
+  </div>
+
+</template>
+
+<template id='SelectorView-item'>
+  <li class="pure-menu-item"><a href="#language/{{value}}" class="pure-menu-link">{{label}}</a></li>
+</template>
