@@ -32,6 +32,10 @@ var del        = require("del");
 var rename = require("gulp-rename");
 var jsesc  = require("jsesc");
 
+// file manipulation, used to make directories
+var fs = require('fs');
+
+
 // log function to display errors instead of bailing
 var log = function(e) {
   notify(e.message);
@@ -93,6 +97,18 @@ console.log("Configuration:\n\n");
 console.log(config);
 
 
+/*
+ * Ensure initial environment
+ */
+
+if (!fs.existsSync('./tmp')){
+    fs.mkdirSync('./tmp');
+}
+
+/*
+ * Tasks
+ */
+
 // Browserify js build
 gulp.task("build:js",["clean:js"], function () {
   // set up the browserify instance on a task basis
@@ -136,20 +152,21 @@ gulp.task("webserver:start", function() {
 
 
 
-
-/*
- * This just concatenates all html files in the src
- * directory, and then inserts them into index.html
- * where it finds the string {{html_templates}}.
- * updates
- */
-gulp.task("build:html",["clean:html"], function () {
-
-  gulp.src(["./src/*.html", "!./src/index.html"])
+// This just concatenates all html files in the src directory.
+gulp.task("concat:html",["clean:html"], function() {
+  return gulp.src(["./src/*.html", "!./src/index.html"])
     .pipe(concat("templates.html"))
     .pipe(gulp.dest("./tmp"));
+})
 
-  gulp.src(config.htmlIndex)
+
+/*
+ * This inserts the concatenated html templates into index.html
+ * where it finds the string {{html_templates}}.
+ */
+gulp.task("build:html",["concat:html"], function () {
+
+  return gulp.src(config.htmlIndex)
     .pipe(gfi({
       "{{html_templates}}" : "./tmp/templates.html"
     }))
