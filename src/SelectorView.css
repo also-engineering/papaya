@@ -5,8 +5,15 @@ div.pure-menu-horizontal {
   background: white;
 }
 
+ul.pure-menu-children {
+  overflow-y: scroll;
+  box-shadow:
+    inset 0 -30px 10px -20px rgba(0,0,0,0.1),
+    0 10px 5px rgba(0,0,0,0.2);
+  border: 0.3em solid white;
+}
 .pure-menu-has-children > .pure-menu-link:after {
-  sfont-size: inherit !important;
+  font-size: 75% !important;
 }
 
 .pure-menu-link, .pure-menu-disabled, .pure-menu-heading {

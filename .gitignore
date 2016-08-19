@@ -12,6 +12,7 @@ plugins
 
 # node
 node_modules
+npm-debug.log
 
 # app builds
 www/*

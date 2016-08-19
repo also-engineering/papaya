@@ -4,7 +4,16 @@ module.exports = {
   "label": "Hadiyyisa",
   "code": "hy",
   "layout": {
-    "style": "table"
+    "style": "table",
+    "indexes" : [
+      [6,7,8,9,10,11],
+      [12,13,14,15,16],
+      [17,18,19,20,21,1],
+      [22,2,23,3,24,25,26],
+      [27,28,29,30,31,32,4],
+      [33,34,35,36,37,38],
+      [39,41,42,40,5,0]
+    ]
   },
   "phonemes": [{
     "id": 0,
@@ -12,8 +21,8 @@ module.exports = {
     "key": "'"
   }, {
     "id": 1,
-    "label": "'L",
-    "key": "'L"
+    "label": "'l",
+    "key": "'l"
   }, {
     "id": 2,
     "label": "'m",
@@ -36,124 +45,124 @@ module.exports = {
     "key": "a"
   }, {
     "id": 7,
+    "label": "aa",
+    "key": "aa"
+  }, {
+    "id": 8,
     "label": "b",
     "key": "b"
   }, {
-    "id": 8,
+    "id": 9,
     "label": "c",
     "key": "c"
   }, {
-    "id": 9,
+    "id": 10,
     "label": "ch",
     "key": "ch"
   }, {
-    "id": 10,
+    "id": 11,
     "label": "d",
     "key": "d"
   }, {
-    "id": 11,
+    "id": 12,
     "label": "e",
     "key": "e"
   }, {
-    "id": 12,
+    "id": 13,
+    "label": "ee",
+    "key": "ee"
+  }, {
+    "id": 14,
     "label": "f",
     "key": "f"
   }, {
-    "id": 13,
+    "id": 15,
     "label": "g",
     "key": "g"
   }, {
-    "id": 14,
+    "id": 16,
     "label": "h",
     "key": "h"
   }, {
-    "id": 15,
+    "id": 17,
     "label": "i",
     "key": "i"
   }, {
-    "id": 16,
+    "id": 18,
+    "label": "ii",
+    "key": "ii"
+  }, {
+    "id": 19,
     "label": "j",
     "key": "j"
   }, {
-    "id": 17,
+    "id": 20,
     "label": "k",
     "key": "k"
   }, {
-    "id": 18,
+    "id": 21,
     "label": "l",
     "key": "l"
   }, {
-    "id": 19,
-    "label": "l_aa",
-    "key": "long_aa"
-  }, {
-    "id": 20,
-    "label": "l_ee",
-    "key": "long_ee"
-  }, {
-    "id": 21,
-    "label": "l_ii",
-    "key": "long_ii"
-  }, {
     "id": 22,
-    "label": "l_oo",
-    "key": "long_oo"
-  }, {
-    "id": 23,
-    "label": "l_uu",
-    "key": "long_uu"
-  }, {
-    "id": 24,
     "label": "m",
     "key": "m"
   }, {
-    "id": 25,
+    "id": 23,
     "label": "n",
     "key": "n"
   }, {
-    "id": 26,
+    "id": 24,
     "label": "ny",
     "key": "ny"
   }, {
-    "id": 27,
+    "id": 25,
     "label": "o",
     "key": "o"
   }, {
-    "id": 28,
+    "id": 26,
+    "label": "oo",
+    "key": "oo"
+  }, {
+    "id": 27,
     "label": "p",
     "key": "p"
   }, {
-    "id": 29,
+    "id": 28,
     "label": "ph",
     "key": "ph"
   }, {
-    "id": 30,
+    "id": 29,
     "label": "q",
     "key": "q"
   }, {
-    "id": 31,
+    "id": 30,
     "label": "r",
     "key": "r"
   }, {
-    "id": 32,
+    "id": 31,
     "label": "s",
     "key": "s"
   }, {
-    "id": 33,
+    "id": 32,
     "label": "sh",
     "key": "sh"
   }, {
-    "id": 34,
+    "id": 33,
     "label": "t",
     "key": "t"
   }, {
-    "id": 35,
+    "id": 34,
     "label": "ts",
     "key": "ts"
   }, {
-    "id": 36,
+    "id": 35,
     "label": "u",
     "key": "u"
+  }, {
+    "id": 36,
+    "label": "uu",
+    "key": "uu"
   }, {
     "id": 37,
     "label": "v",

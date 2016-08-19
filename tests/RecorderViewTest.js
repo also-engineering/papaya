@@ -23,7 +23,6 @@ describe("RecorderView", function() {
       var v = new ns.RecorderView();
       v.render();
       expect(v.$el.find(".RecorderView-play").length).to.equal(1);
-
     });
 
     it("Shows a stop-play button", function() {

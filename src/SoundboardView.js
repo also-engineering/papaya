@@ -6,9 +6,11 @@ var Player = require("Player");
 var Handlebars = require("handlebars");
 
 var SoundboardView = Backbone.View.extend({
+
   events: {
     "click button": "play"
   },
+
   initialize: function(options) {
     this.templates = {
       table: Handlebars.compile($("script#SoundboardView-table").html()),
@@ -49,6 +51,9 @@ var SoundboardView = Backbone.View.extend({
   clear: function() {
     this.$el.html("");
   },
+  position: function(){
+    this.$el.css('padding-top', $(".pure-menu-horizontal").height());
+  },
   render: function() {
 
     var html = "";
@@ -66,6 +71,7 @@ var SoundboardView = Backbone.View.extend({
     }
 
     this.$el.html(html);
+    this.position();
 
   }
 });

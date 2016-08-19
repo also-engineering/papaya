@@ -4,7 +4,14 @@ module.exports = {
   "label": "Af-Somali",
   "code": "so",
   "layout": {
-    "style": "table"
+    "style": "table",
+    "indexes" : [
+      [2,25,13,29,15,4,22,23],
+      [24,5,3,9,8,21,14,16],
+      [17,18,28,10,30],
+      [0,6,11,19,26],
+      [1,7,12,20,27]
+    ]
   },
   "phonemes": [{
     "id": 0,
@@ -76,8 +83,8 @@ module.exports = {
     "key": "l"
   }, {
     "id": 17,
-    "label": "mm",
-    "key": "mm"
+    "label": "m",
+    "key": "m"
   }, {
     "id": 18,
     "label": "n",

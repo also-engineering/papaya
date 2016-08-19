@@ -20,7 +20,6 @@ body {
 #soundboard {
   background-color: white;
   overflow-y: scroll;
-  padding-top: 10vmax;
   padding-bottom: 15vmax; /* Tied to RecorderView button heights */
 }
 

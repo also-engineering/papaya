@@ -28,6 +28,7 @@ fs.readdir( PATH, function(err, dir) {
     // Join again in case the phoneme name has underscores
     var phoneme  = parts.join("_");
 
+    // Start with a default and blank configuration
     if (typeof configs[language] === "undefined") {
       configs[language] = {
         label: "",

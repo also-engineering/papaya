@@ -6,11 +6,11 @@
  * @TODO An individual language should probably be its own object.
  */
 
-var Conf = function() {
-  this.languages = [];
-};
+var Conf = {
+  languages : [],
 
-Conf.prototype.add = function(newLanguages) {
+
+  add : function(newLanguages) {
 
   // sanitize argument
   var argIsntArray = !(newLanguages instanceof Array);
@@ -33,9 +33,9 @@ Conf.prototype.add = function(newLanguages) {
 
   this.update();
 
-};
+},
 
-Conf.prototype.update = function() {
+  update : function() {
   this.languageByCode = this.languages.reduce(function(obj, el) {
     obj[el.code] = el;
     return obj;
@@ -51,10 +51,10 @@ Conf.prototype.update = function() {
 
   this.updateLayouts();
 
-};
+},
 
 
-Conf.prototype.updateLayouts = function() {
+  updateLayouts : function() {
 
   // Build a layout for each laguage for easy templating
   this.languages.forEach(function(language) {
@@ -92,6 +92,7 @@ Conf.prototype.updateLayouts = function() {
     } // language.layout.style == "table"
 
   });
+  }
 };
 
 Object.defineProperty(Conf, "DEFAULT_TABLE_WIDTH", {

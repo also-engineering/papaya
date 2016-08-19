@@ -4,7 +4,18 @@ module.exports = {
   "label": "Wolayttatto",
   "code": "wt",
   "layout": {
-    "style": "table"
+    "style": "table",
+    "indexes" : [
+      [2,57,17,20,3,44,28],
+      [48,34,10,19,14,42,30],
+      [50,22,51,35,21,26,4],
+      [54,24,15,40,55,45,47],
+      [1,6,52,25,36,59,9],
+      [11,16,18,46,41,5,27],
+      [29,39,7,0,33,56,58],
+      [37,62,23,13,38,8,53],
+      [60,12,43,31,32,49,61]
+    ]
   },
   "phonemes": [{
     "id": 0,
@@ -20,124 +31,124 @@ module.exports = {
     "key": "a"
   }, {
     "id": 3,
+    "label": "aa",
+    "key": "aa"
+  }, {
+    "id": 4,
     "label": "b",
     "key": "b"
   }, {
-    "id": 4,
+    "id": 5,
     "label": "bb",
     "key": "bb"
   }, {
-    "id": 5,
+    "id": 6,
     "label": "c",
     "key": "c"
   }, {
-    "id": 6,
+    "id": 7,
     "label": "cc",
     "key": "cc"
   }, {
-    "id": 7,
+    "id": 8,
     "label": "ch",
     "key": "ch"
   }, {
-    "id": 8,
+    "id": 9,
     "label": "chch",
     "key": "chch"
   }, {
-    "id": 9,
+    "id": 10,
     "label": "d",
     "key": "d"
   }, {
-    "id": 10,
+    "id": 11,
     "label": "dd",
     "key": "dd"
   }, {
-    "id": 11,
+    "id": 12,
     "label": "dh",
     "key": "dh"
   }, {
-    "id": 12,
+    "id": 13,
     "label": "dhdh",
     "key": "dhdh"
   }, {
-    "id": 13,
+    "id": 14,
     "label": "e",
     "key": "e"
   }, {
-    "id": 14,
+    "id": 15,
+    "label": "ee",
+    "key": "ee"
+  }, {
+    "id": 16,
     "label": "f",
     "key": "f"
   }, {
-    "id": 15,
+    "id": 17,
     "label": "g",
     "key": "g"
   }, {
-    "id": 16,
+    "id": 18,
     "label": "gg",
     "key": "gg"
   }, {
-    "id": 17,
+    "id": 19,
     "label": "h",
     "key": "h"
   }, {
-    "id": 18,
+    "id": 20,
     "label": "i",
     "key": "i"
   }, {
-    "id": 19,
+    "id": 21,
+    "label": "ii",
+    "key": "ii"
+  }, {
+    "id": 22,
     "label": "j",
     "key": "j"
   }, {
-    "id": 20,
+    "id": 23,
     "label": "jj",
     "key": "jj"
   }, {
-    "id": 21,
+    "id": 24,
     "label": "k",
     "key": "k"
   }, {
-    "id": 22,
+    "id": 25,
     "label": "kk",
     "key": "kk"
   }, {
-    "id": 23,
+    "id": 26,
     "label": "l",
     "key": "l"
   }, {
-    "id": 24,
+    "id": 27,
     "label": "ll",
     "key": "ll"
   }, {
-    "id": 25,
-    "label" : "l_aa",
-    "key": "long_aa"
-  }, {
-    "id": 26,
-    "label" : "l_ee",
-    "key": "long_ee"
-  }, {
-    "id": 27,
-    "label" : "l_ii",
-    "key": "long_ii"
-  }, {
     "id": 28,
-    "label" : "l_oo",
-    "key": "long_oo"
-  }, {
-    "id": 29,
-    "label" : "l_uu",
-    "key": "long_uu"
-  }, {
-    "id": 30,
     "label": "m",
     "key": "m"
   }, {
-    "id": 31,
+    "id": 29,
     "label": "mm",
     "key": "mm"
   }, {
-    "id": 32,
+    "id": 30,
     "label": "n",
     "key": "n"
+  }, {
+    "id": 31,
+    "label": "nh",
+    "key": "nh"
+  }, {
+    "id": 32,
+    "label": "nhnh",
+    "key": "nhnh"
   }, {
     "id": 33,
     "label": "nn",
@@ -148,98 +159,114 @@ module.exports = {
     "key": "o"
   }, {
     "id": 35,
+    "label": "oo",
+    "key": "oo"
+  }, {
+    "id": 36,
     "label": "p",
     "key": "p"
   }, {
-    "id": 36,
+    "id": 37,
     "label": "ph",
     "key": "ph"
   }, {
-    "id": 37,
+    "id": 38,
     "label": "phph",
     "key": "phph"
   }, {
-    "id": 38,
+    "id": 39,
     "label": "pp",
     "key": "pp"
   }, {
-    "id": 39,
+    "id": 40,
     "label": "q",
     "key": "q"
   }, {
-    "id": 40,
+    "id": 41,
     "label": "qq",
     "key": "qq"
   }, {
-    "id": 41,
+    "id": 42,
     "label": "r",
     "key": "r"
   }, {
-    "id": 42,
+    "id": 43,
     "label": "rr",
     "key": "rr"
   }, {
-    "id": 43,
+    "id": 44,
     "label": "s",
     "key": "s"
   }, {
-    "id": 44,
+    "id": 45,
     "label": "sh",
     "key": "sh"
   }, {
-    "id": 45,
+    "id": 46,
     "label": "shsh",
     "key": "shsh"
   }, {
-    "id": 46,
+    "id": 47,
     "label": "ss",
     "key": "ss"
   }, {
-    "id": 47,
+    "id": 48,
     "label": "t",
     "key": "t"
   }, {
-    "id": 48,
+    "id": 49,
+    "label": "ts",
+    "key": "ts"
+  }, {
+    "id": 50,
     "label": "tt",
     "key": "tt"
   }, {
-    "id": 49,
+    "id": 51,
     "label": "u",
     "key": "u"
   }, {
-    "id": 50,
+    "id": 52,
+    "label": "uu",
+    "key": "uu"
+  }, {
+    "id": 53,
     "label": "v",
     "key": "v"
   }, {
-    "id": 51,
+    "id": 54,
     "label": "w",
     "key": "w"
   }, {
-    "id": 52,
-    "label": "ww",
-    "key": "ww"
-  }, {
-    "id": 53,
+    "id": 55,
     "label": "x",
     "key": "x"
   }, {
-    "id": 54,
+    "id": 56,
     "label": "xx",
     "key": "xx"
   }, {
-    "id": 55,
+    "id": 57,
     "label": "y",
     "key": "y"
   }, {
-    "id": 56,
+    "id": 58,
     "label": "yy",
     "key": "yy"
   }, {
-    "id": 57,
+    "id": 59,
     "label": "z",
     "key": "z"
   }, {
-    "id": 58,
+    "id": 60,
+    "label": "zh",
+    "key": "zh"
+  }, {
+    "id": 61,
+    "label": "zhzh",
+    "key": "zhzh"
+  }, {
+    "id": 62,
     "label": "zz",
     "key": "zz"
   }]

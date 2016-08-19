@@ -61,10 +61,11 @@ var configs = {
 /*
  * parse arguments...kinda
  */
-var rawrgv = JSON.parse(process.env.npm_config_argv).original;
 
+var rawrgv = process.argv;
 var argv = {};
-
+rawrgv.shift();
+rawrgv.shift();
 rawrgv.forEach(function(el, i){
   if (~el.indexOf("--") && ~el.indexOf("=")) {
     var clean = el.substr(2);
@@ -81,7 +82,6 @@ rawrgv.forEach(function(el, i){
     }
   }
 });
-
 
 var chosen = argv.t ? "testing" : "default";
 

@@ -1,15 +1,21 @@
 button.SoundboardView-phoneme {
-  margin: 0.4em 0 0 0em;
-  padding: .5em;
   background: rgb(250,175,100); /* Orange */
   color: black;
   font-weight: normal;
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: .4em;
 }
 
-
 table.SoundboardView-table {
-  width: 90%;
+  margin-top: 0.5em;
   margin-left: 0.5em;
+  width:90%;
+}
+
+table.SoundboardView-table td {
+  padding: 0.2em;
 }
 
 
@@ -34,7 +40,7 @@ table.SoundboardView-table {
 }
 @media only screen and (min-width : 800px) and (orientation: landscape) {
   button.SoundboardView-phoneme {
-    font-size: 2.2em;
+    font-size: 2.1em;
   }
 }
 @media only screen and (min-width : 1000px) and (orientation: landscape) {
@@ -75,7 +81,7 @@ table.SoundboardView-table {
 
 @media only screen and (min-width : 800px) and (orientation: portrait) {
   button.SoundboardView-phoneme {
-    font-size: 2.2em;
+    font-size: 2.1em;
   }
 }
 @media only screen and (min-width : 1024px) and (orientation: portrait) {

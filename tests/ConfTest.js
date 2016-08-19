@@ -44,24 +44,24 @@ var languageNoIndex = {
 describe("Configuration", function() {
 
   it("Initialized with no languages", function() {
-    var c = new Conf();
+    var c = Conf;
     expect(c.languages).to.have.length(0);
   });
 
   it("Adding a language", function() {
-    var c = new Conf();
+    var c = Conf;
     c.add(language);
     expect(c.languages).to.have.length(1);
   });
 
   it("Indexing languages by code", function() {
-    var c = new Conf();
+    var c = Conf;
     c.add(language);
     expect(c.languageByCode["en"]).to.not.be.null;
   });
 
   it("Indexing phonemes by id", function() {
-    var c = new Conf();
+    var c = Conf;
     c.add(language);
     var firstLanguage = c.languages[0];
     expect(firstLanguage.phonemesById[0]).to.not.be.null;
@@ -71,7 +71,7 @@ describe("Configuration", function() {
   });
 
   it("Table layout with indexes", function() {
-    var c = new Conf();
+    var c = Conf;
     c.add(language);
     var firstLanguage = c.languages[0];
     expect(firstLanguage.layout.table.rows[0].cells[0].key).to.equal(phonemes[0].key);
@@ -81,7 +81,7 @@ describe("Configuration", function() {
   });
 
   it("Table layout without indexes", function() {
-    var c = new Conf();
+    var c = Conf;
     c.add(languageNoIndex);
     var firstLanguage = c.languages[0];
     expect(firstLanguage.layout.table.rows[0].cells[0].key).to.equal(phonemes[0].key);

@@ -3,7 +3,7 @@
  * Useful for testing.
  */
 
-var Conf = new require("Conf");
+var Conf = require("Conf");
 
 Conf.add([
   require("ConfOR"), // Afan Oromo

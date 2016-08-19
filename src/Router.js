@@ -40,7 +40,7 @@ var Router = Backbone.Router.extend({
 
     // Soundboard
     this.soundboard = new SoundboardView();
-    this.setElement("#soundboard").render();
+    this.soundboard.setElement("#soundboard");
 
     // acknowledgement overlay
     this.overlay = new OverlayView();

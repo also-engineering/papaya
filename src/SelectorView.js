@@ -34,7 +34,9 @@ var SelectorView = Backbone.View.extend({
   },
 
   toggle: function() {
-    this.$el.find(".pure-menu-children").toggle();
+    var halfWindow = $(window).height() / 2;
+    this.$el.find(".pure-menu-children").toggle().height(halfWindow);
+    this.$el.find(".pure-menu-children li").height('initial')
   },
 
   render: function() {
