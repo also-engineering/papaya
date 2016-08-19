@@ -17,3 +17,4 @@ npm-debug.log
 # app builds
 www/*
 !www/assets
+tmp/*
